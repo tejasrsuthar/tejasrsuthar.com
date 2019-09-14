@@ -78,164 +78,11 @@
     <meta name="generator" content="Ghost 2.30" />
     <link rel="alternate" type="application/rss+xml" title="Tejas Suthar" href="../rss/index.html" />
     <script>
-  const ghostSearchApiKey = 'ed89936afb17de94e3bbc2a714';
   const disableFadeAnimation = true;
 </script>
-
-<!-- =================================================
-Theme: FirePress_Klimax2
-Header CSS override 
-maintained by https://firepress.org/ 🔥📰
-Find Code Injection templates on https://github.com/firepress-org/Code-Injection-for-Ghost-themes
-================================================== -->
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600,800,800i|Raleway:700|Source+Sans+Pro:300,400,700" rel="stylesheet">
-<style>
-    
-    .post-full-content {
-    font-family: Source Sans Pro,HelveticaNeue-Light,Helvetica Neue Light,
-        Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif;
-    
-    }
-    .progress { color: #f6396a;}
-   
-    
-    .post-full-content h1, .post-full-content h2, .post-full-content h3, 
-    .post-full-content h4, .post-full-content h5, .post-full-content h6{
-          font-family: Source Sans Pro,HelveticaNeue-Light,Helvetica Neue Light,
-        Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif;
-    }
-    
-    
- .post-card-excerpt { font-family: Source Sans Pro,Helvetica,Arial,Lucida Grande,sans-serif; font-size: 113%;
-     color: #5a576;}
-.post-card-tags {
-    display: block;
-    margin-bottom: 4px;
-    color: #f6396a;
-    font-size: 1.2rem;
-    line-height: 1.15em;
-    font-weight: 500;
-    letter-spacing: .5px;
-    text-transform: uppercase;
-    min-height: 13px;
-    }
-.home-template .post-card-large .post-card-content { padding: 63px 0 20px;}
-.post-card-title {margin-top: 22px;
-    text-transform: uppercase;
-    font-weight: 400;}
-    
- .site-description {
-	z-index: 10;
-    margin: 0;
-    padding: 5px 0;
-    font-size: 2rem;
-    font-weight: 300;
-    letter-spacing: .5px;
-    opacity: 1;
- }
-@media (min-width: 795px)
-.post-card-large p {
-    font-size: 1.8rem;
-    line-height: 1.55em;
-}
-
-body {
-    color: #5c5a63;
-    font-family: Source Sans Pro,HelveticaNeue-Light,Helvetica Neue Light,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif;
-    font-size: 1.5rem;
-    line-height: 1.6em;
-    font-weight: 300;
-    font-style: normal;
-    letter-spacing: 0;
-    text-rendering: optimizeLegibility;
-    background: #fff;  
-  }
-    
- .read-next-card, .post-card, .post-card-image-link, .post-card-large .post-card-image-link {
-     border-radius: 0px;
- }  
- a {color: #f6396a}
- .post-full-meta-date {color: #f6396a}
- .post-full-meta {
-    color: #f6396a;
-    font-size: 1.4rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin: 48px 0 20px;
-    font-weight:300;
- }
-  .post-full-title {
-    margin: 0;
-    color: #27262c;
-    text-transform: uppercase;
-    font-weight: 600;
-  }
-  // Logo size {}
-  img.site-logo {
-   
-  }
-  // Main image roudness {}
-  .post-full-image {
-    /*border-radius: 0px 0px 6px 6px;*/
-  }
-  // Main content section roudness {}
-  .post-full-content {
-    /*border-radius: 6px 6px 0px 0px;*/
-  }
+<style>    
  
-  // Image roudness in contents {}
-  .post-full-content img {
-    /*border-radius: 6px;*/
-  }
-  // Title background {}
-  .post-full-header {
-    /*position: absolute;
-    padding: 3vw 3vw 3vw;
-    background: rgba(0, 0, 0, 0.58);
-    border-radius: 6px;
-    margin: 16vw auto;
-    width: 100%;*/
-  }
-  // Content first paragraph size {}
-  .post-template .kg-card-markdown>p:first-child {
-    /*font-size: 1.0em;
-    line-height: 1.5em;*/
-  }
-  // Footer spacing {}
-  .site-footer {
-    /*position: relative;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    color: #fff;
-    background: #000;*/
-  }
-  // MOBILE_RESOLUTION {}
-  @media (max-width: 500px) {
-    .post-full-header {
-      /*margin: 30vw auto;*/
-    }
-    img.site-logo {
-      /*max-height: 25vw !important;*/
-    }
-    .site-description {
-      /*font-size: 1.5rem;*/
-    }
-    .post-full-image {
-      /*border-radius: 0px;*/
-    }
-  }
-  // TABLET_RESOLUTION {}
-  @media (min-width: 501px) {
-    .post-full-header {
-      /*margin: 15vw auto;*/
-    }
-    img.site-logo {
-      /*max-height: 25vw !important;*/
-    }
-    .post-full-image {
-      /*border-radius: 0px;*/
-    }
-  }
 </style>
 
 
@@ -244,7 +91,67 @@ Footer CSS override
 ================================================== -->
 
 <style>
-  // SNIPPET {}
+ .post-full-image {
+    margin: 0;
+    height: 490px;
+    background: #c5d2d9 50%;
+    background-size: cover;
+    border-radius: 5px;
+}
+.post-full-content:after, .post-full-content:before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    z-index: -1;
+    display: block;
+    width: 20px;
+    height: 200px;
+    background: rgba(39,44,49,.04);
+    filter: blur(5px);
+}
+    .post-full-content:after, .post-full-content:before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    z-index: -1;
+    display: block;
+    width: 20px;
+    height: 200px;
+    background: rgba(39,44,49,.04);
+    filter: blur(5px);
+}
+.author-card .author-profile-image, .author-card .avatar-wrapper {
+    margin-top: 10px;
+}
+ .author-card-content p {
+    font-size: 19px;
+}
+ .post-full-content blockquote {
+    border-left: 3px solid #f6396a;
+}
+.post-full-content{font-family:Source Sans Pro,HelveticaNeue-Light,Helvetica Neue Light,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif}
+b,strong{font-weight:400}
+.post-full-content h3 {margin: .5em 0 .2em;}
+.post-content a:link, .post-content a:visited {padding: 2px; color: #918c9c;box-shadow: inset 0 -1px 0 #f63954;}
+ .post-content a:hover {color: white;box-shadow: inset 0 -1px 0 #918c9c;background: #f63954;}
+    
+.post-content h2 {color: #36333ef7 !important;font-size: 33px;line-height: 41.4px;margin-top: 40px;}
+.post-content h1, .post-content h2, .post-content h3, .post-content h4, .post-content h5, .post-content h6 {font-family: Source Sans Pro,sans-serif;font-weight: 700;line-height: 1.6em;letter-spacing: -.02em;margin-bottom: 20px;color: #f63954;}    
+.progress{color:#f6396a;}
+.post-full-content h1,.post-full-content h2,.post-full-content h3,.post-full-content h4,.post-full-content h5,.post-full-content h6{font-family:Source Sans Pro,HelveticaNeue-Light,Helvetica Neue Light,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif}
+.post-card-excerpt{font-family:Source Sans Pro,Helvetica,Arial,Lucida Grande,sans-serif;font-size:113%;color:#5a576}
+.post-card-tags{display:block;margin-bottom:4px;color:#f6396a;font-size:1.2rem;line-height:1.15em;font-weight:500;letter-spacing:.5px;text-transform:uppercase;min-height:13px}
+.home-template .post-card-large .post-card-content{padding:63px 0 20px}
+.post-card-title{margin-top:22px;text-transform:uppercase;font-weight:400}
+.site-description{z-index:10;margin:0;padding:5px 0;font-size:2rem;font-weight:300;letter-spacing:.5px;opacity:1}
+body{color:#5c5a63;font-family:Source Sans Pro,HelveticaNeue-Light,Helvetica Neue Light,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif;font-size:1.5rem;line-height:1.6em;font-weight:300;font-style:normal;letter-spacing:0;text-rendering:optimizeLegibility;background:#fff}
+.read-next-card,.post-card,.post-card-image-link,.post-card-large .post-card-image-link{border-radius:0}
+a{color:#f6396a}
+.post-full-meta-date{color:#f6396a}
+.post-full-meta{color:#f6396a;font-size:1.4rem;text-transform:uppercase;letter-spacing:1px;margin:48px 0 20px;font-weight:300}
+.post-full-title{margin:0;color:#27262c;text-transform:uppercase;font-weight:600}
+.post-content ol, .post-content p, .post-content ul { font-size: 23.2px;line-height: 36.4px;}
+ .post-content blockquote, .post-content iframe, .post-content ol, .post-content p, .post-content pre, .post-content ul {margin-top: 0;margin-bottom: 30px;}
 </style>
 
 </head>
