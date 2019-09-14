@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
+
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
@@ -8,26 +9,7 @@
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" type="text/css" href="../assets/css/app.css%3Fv=e8c3138abf.css" media="screen" />
-
-      <style>
-    .m-hero__picture {
-      background-image: url(https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib&#x3D;rb-1.2.1&amp;q&#x3D;80&amp;fm&#x3D;jpg&amp;crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;w&#x3D;1080&amp;fit&#x3D;max&amp;ixid&#x3D;eyJhcHBfaWQiOjExNzczfQ);
-    }
-  
-    @media(max-width: 1000px) {
-      .m-hero__picture {
-        background-image: url(https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib&#x3D;rb-1.2.1&amp;q&#x3D;80&amp;fm&#x3D;jpg&amp;crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;w&#x3D;1080&amp;fit&#x3D;max&amp;ixid&#x3D;eyJhcHBfaWQiOjExNzczfQ);
-      }
-    }
-  
-    @media(max-width: 600px) {
-      .m-hero__picture {
-        background-image: url(https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib&#x3D;rb-1.2.1&amp;q&#x3D;80&amp;fm&#x3D;jpg&amp;crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;w&#x3D;1080&amp;fit&#x3D;max&amp;ixid&#x3D;eyJhcHBfaWQiOjExNzczfQ);
-      }
-    }
-  </style>
-
+    <link rel="stylesheet" type="text/css" href="../assets/built/screen.css%3Fv=3ecc58b498.css" />
 
     <meta name="description" content="Create a blog powered by JamStack includes Ghost and GitHub Pages  - Best way to setup ghost with Github pages" />
     <link rel="shortcut icon" href="../favicon.png" type="image/png" />
@@ -114,183 +96,237 @@
   const disableFadeAnimation = true;
 </script>
 
-    <script>
-      const ghostHost = "http://localhost:2368"
-    </script>
-
-    <script>
-      WebFontConfig = {
-        google: { families: ['Nunito:300,300i,400,400i,600,600i,700,700i,800,800i'] }
-      };
-
-      (function (d) {
-        var wf = d.createElement('script'), s = d.scripts[0];
-        wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js';
-        wf.async = true;
-        s.parentNode.insertBefore(wf, s);
-      })(document);
-    </script>
-  </head>
-  <body class="post-template tag-jamstack tag-github-pages tag-headless-cms">
+<!-- =================================================
+Theme: FirePress_Klimax2
+Header CSS override 
+maintained by https://firepress.org/ 🔥📰
+Find Code Injection templates on https://github.com/firepress-org/Code-Injection-for-Ghost-themes
+================================================== -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600,800,800i|Raleway:700|Source+Sans+Pro:300,400,700" rel="stylesheet">
+<style>
     
+    .post-full-content {
+    font-family: Source Sans Pro,HelveticaNeue-Light,Helvetica Neue Light,
+        Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif;
+    
+    }
+    .progress { color: #f6396a;}
+   
+    
+    .post-full-content h1, .post-full-content h2, .post-full-content h3, 
+    .post-full-content h4, .post-full-content h5, .post-full-content h6{
+          font-family: Source Sans Pro,HelveticaNeue-Light,Helvetica Neue Light,
+        Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif;
+    }
+    
+    
+ .post-card-excerpt { font-family: Source Sans Pro,Helvetica,Arial,Lucida Grande,sans-serif; font-size: 113%;
+     color: #5a576;}
+.post-card-tags {
+    display: block;
+    margin-bottom: 4px;
+    color: #f6396a;
+    font-size: 1.2rem;
+    line-height: 1.15em;
+    font-weight: 500;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    min-height: 13px;
+    }
+.home-template .post-card-large .post-card-content { padding: 63px 0 20px;}
+.post-card-title {margin-top: 22px;
+    text-transform: uppercase;
+    font-weight: 400;}
+    
+ .site-description {
+	z-index: 10;
+    margin: 0;
+    padding: 5px 0;
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: .5px;
+    opacity: 1;
+ }
+@media (min-width: 795px)
+.post-card-large p {
+    font-size: 1.8rem;
+    line-height: 1.55em;
+}
 
-<div class="main-wrap">
-  
-  <header class="m-header with-picture js-header">
-  <div class="m-mobile-topbar" data-aos="fade-down">
-    <button class="m-icon-button in-mobile-topbar js-open-menu" aria-label="Open menu">
-      <span class="icon-menu"></span>
-    </button>
-      <a href="../index.html" class="m-logo in-mobile-topbar">
-        <img src="../content/images/2019/09/Logo-copy.png" alt="Tejas Suthar">
-      </a>
-    <button class="m-icon-button in-mobile-topbar js-open-search" aria-label="Open search">
-      <span class="icon-search"></span>
-    </button>
-  </div>
+body {
+    color: #5c5a63;
+    font-family: Source Sans Pro,HelveticaNeue-Light,Helvetica Neue Light,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.6em;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: 0;
+    text-rendering: optimizeLegibility;
+    background: #fff;  
+  }
+    
+ .read-next-card, .post-card, .post-card-image-link, .post-card-large .post-card-image-link {
+     border-radius: 0px;
+ }  
+ a {color: #f6396a}
+ .post-full-meta-date {color: #f6396a}
+ .post-full-meta {
+    color: #f6396a;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 48px 0 20px;
+    font-weight:300;
+ }
+  .post-full-title {
+    margin: 0;
+    color: #27262c;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  // Logo size {}
+  img.site-logo {
+   
+  }
+  // Main image roudness {}
+  .post-full-image {
+    /*border-radius: 0px 0px 6px 6px;*/
+  }
+  // Main content section roudness {}
+  .post-full-content {
+    /*border-radius: 6px 6px 0px 0px;*/
+  }
+ 
+  // Image roudness in contents {}
+  .post-full-content img {
+    /*border-radius: 6px;*/
+  }
+  // Title background {}
+  .post-full-header {
+    /*position: absolute;
+    padding: 3vw 3vw 3vw;
+    background: rgba(0, 0, 0, 0.58);
+    border-radius: 6px;
+    margin: 16vw auto;
+    width: 100%;*/
+  }
+  // Content first paragraph size {}
+  .post-template .kg-card-markdown>p:first-child {
+    /*font-size: 1.0em;
+    line-height: 1.5em;*/
+  }
+  // Footer spacing {}
+  .site-footer {
+    /*position: relative;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: #fff;
+    background: #000;*/
+  }
+  // MOBILE_RESOLUTION {}
+  @media (max-width: 500px) {
+    .post-full-header {
+      /*margin: 30vw auto;*/
+    }
+    img.site-logo {
+      /*max-height: 25vw !important;*/
+    }
+    .site-description {
+      /*font-size: 1.5rem;*/
+    }
+    .post-full-image {
+      /*border-radius: 0px;*/
+    }
+  }
+  // TABLET_RESOLUTION {}
+  @media (min-width: 501px) {
+    .post-full-header {
+      /*margin: 15vw auto;*/
+    }
+    img.site-logo {
+      /*max-height: 25vw !important;*/
+    }
+    .post-full-image {
+      /*border-radius: 0px;*/
+    }
+  }
+</style>
 
-  <div class="m-menu js-menu">
-    <button class="m-icon-button outlined as-close-menu js-close-menu" aria-label="Close menu">
-      <span class="icon-close"></span>
-    </button>
-    <div class="m-menu__main" data-aos="fade-down">
-      <div class="l-wrapper">
-        <div class="m-nav">
-          <nav class="m-nav__left">
-              
-<ul role="menu">
-  <li class="only-desktop" role="menuitem">
-    <a href="../index.html" class="m-logo">
-      <img src="../content/images/2019/09/Logo-copy.png" alt="Tejas Suthar">
-    </a>
-  </li>
-    <li class="nav-about">
-      <a href="../about-tejas-suthar/index.html">about</a>
-    </li>
-    <li class="nav-posts">
-      <a href="../author/tejas-suthar/index.html">posts</a>
-    </li>
-    <li class="nav-hire-me">
-      <a href="../hire-tejas-suthar/index.html">hire me</a>
-    </li>
-    <li class="nav-open-source">
-      <a href="../open-source/index.html">open source</a>
-    </li>
-    <li class="nav-contact">
-      <a href="../contact/index.html">contact</a>
-    </li>
-  <li role="menuitem" class="js-submenu-option">
-    <button class="m-icon-button in-menu-main more js-toggle-submenu" aria-label="Toggle submenu">
-      <span class="icon-more"></span>
-    </button>
-    <div class="m-submenu js-submenu">
-      <div class="l-wrapper in-submenu">
-        <section class="m-recent-articles">
-          <h3 class="m-submenu-title in-recent-articles">Recent articles</h3>
-          <div class="js-recent-articles">
-                <div>
-                  <a href="../how-to-prepare-for-aws-certification/index.html" class="m-recent-article">
-                    <div class="m-recent-article__picture">
-                      <div style="background-image: url(https://images.unsplash.com/photo-1557899563-1940fc95709c?ixlib&#x3D;rb-1.2.1&amp;q&#x3D;80&amp;fm&#x3D;jpg&amp;crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;w&#x3D;1080&amp;fit&#x3D;max&amp;ixid&#x3D;eyJhcHBfaWQiOjExNzczfQ);"></div>
-                    </div>
-                    <h3 class="m-recent-article__title">How to prepare for AWS Certification</h3>
-                    <span class="m-recent-article__date">6 days ago</span>
-                  </a>
-                </div>
-                <div>
-                  <a href="index.html" class="m-recent-article">
-                    <div class="m-recent-article__picture">
-                      <div style="background-image: url(https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib&#x3D;rb-1.2.1&amp;q&#x3D;80&amp;fm&#x3D;jpg&amp;crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;w&#x3D;1080&amp;fit&#x3D;max&amp;ixid&#x3D;eyJhcHBfaWQiOjExNzczfQ);"></div>
-                    </div>
-                    <h3 class="m-recent-article__title">Best way to setup JamStack with Ghost and github pages. ✍️ 👍</h3>
-                    <span class="m-recent-article__date">10 days ago</span>
-                  </a>
-                </div>
-                <div>
-                  <a href="../how-i-prepared-for-my-aws-certification/index.html" class="m-recent-article">
-                    <div class="m-recent-article__picture">
-                      <div style="background-image: url(https://images.unsplash.com/photo-1456406644174-8ddd4cd52a06?ixlib&#x3D;rb-1.2.1&amp;q&#x3D;80&amp;fm&#x3D;jpg&amp;crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;w&#x3D;1080&amp;fit&#x3D;max&amp;ixid&#x3D;eyJhcHBfaWQiOjExNzczfQ);"></div>
-                    </div>
-                    <h3 class="m-recent-article__title">How I prepared for my AWS certification</h3>
-                    <span class="m-recent-article__date">10 days ago</span>
-                  </a>
-                </div>
-          </div>
-        </section>
-        <section class="m-tags">
-          <h3 class="m-submenu-title">Tags</h3>
-            <ul>
-                <li>
-                  <a href="../tag/aws-certification/index.html">AWS Certification</a>
-                </li>
-                <li>
-                  <a href="../tag/ahmedabad/index.html">Ahmedabad</a>
-                </li>
-                <li>
-                  <a href="../tag/github-pages/index.html">GitHub Pages</a>
-                </li>
-                <li>
-                  <a href="../tag/headless-cms/index.html">headless cms</a>
-                </li>
-                <li>
-                  <a href="../tag/jamstack/index.html">jamstack</a>
-                </li>
-                <li>
-                  <a href="../tag/remote-job-hire/index.html">remote-job-hire</a>
-                </li>
-            </ul>
-        </section>
-      </div>
-    </div>
-  </li>
+
+<!-- =================================================
+Footer CSS override 
+================================================== -->
+
+<style>
+  // SNIPPET {}
+</style>
+
+</head>
+<body class="post-template tag-jamstack tag-github-pages tag-headless-cms">
+
+    <div class="site-wrapper">
+
+        
+
+<header class="site-header outer">
+    <div class="inner">
+        <nav class="site-nav">
+    <div class="site-nav-left">
+                <a class="site-nav-logo" href="../index.html"><img src="../content/images/2019/09/Logo-copy.png" alt="Tejas Suthar" /></a>
+            <ul class="nav" role="menu">
+    <li class="nav-about" role="menuitem"><a href="../about-tejas-suthar/index.html">about</a></li>
+    <li class="nav-posts" role="menuitem"><a href="../author/tejas-suthar/index.html">posts</a></li>
+    <li class="nav-hire-me" role="menuitem"><a href="../hire-tejas-suthar/index.html">hire me</a></li>
+    <li class="nav-open-source" role="menuitem"><a href="../open-source/index.html">open source</a></li>
+    <li class="nav-contact" role="menuitem"><a href="../contact/index.html">contact</a></li>
 </ul>
 
-          </nav>
-          <button class="m-icon-button in-menu-main js-open-search" aria-label="Open search">
-            <span class="icon-search"></span>
-          </button>
-        </div>
-      </div>
     </div>
-  </div>
+    <div class="site-nav-right">
+        <div class="social-links">
+                <a class="social-link social-link-fb" href="https://www.facebook.com/tejassuthar" title="Facebook" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"/></svg>
+</a>
+                <a class="social-link social-link-tw" href="https://twitter.com/tejassuthar" title="Twitter" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"/></svg>
+</a>
+        </div>
+            <a class="rss-button" href="https://feedly.com/i/subscription/feed/http://localhost:2368/rss/" title="RSS" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><circle cx="6.18" cy="17.82" r="2.18"/><path d="M4 4.44v2.83c7.03 0 12.73 5.7 12.73 12.73h2.83c0-8.59-6.97-15.56-15.56-15.56zm0 5.66v2.83c3.9 0 7.07 3.17 7.07 7.07h2.83c0-5.47-4.43-9.9-9.9-9.9z"/></svg>
+</a>
+    </div>
+</nav>
+    </div>
 </header>
-  
 
-  <header class="m-hero with-picture" data-aos="fade">
-      <div class="m-hero__picture in-post"></div>
-  </header>
-  
-  <main>
-    <article>
-      <div class="l-content">
-        <div class="l-wrapper in-post js-aos-wrapper" data-aos="fade-up" data-aos-delay="300">
-          <div class="l-post-content js-progress-content">
-            <header class="m-heading">
-              <h1 class="m-heading__title in-post">Best way to setup JamStack with Ghost and github pages. ✍️ 👍</h1>
-              <div class="m-heading__meta">
-                <a href="../tag/jamstack/index.html" class="m-heading__meta__tag">jamstack</a>
-                <span class="m-heading__meta__divider">&bull;</span>
-                <span class="m-heading__meta__time">Sep 01, 2019</span>
-              </div>
+
+<main id="site-main" class="site-main outer">
+    <div class="inner">
+
+        <article class="post-full post tag-jamstack tag-github-pages tag-headless-cms ">
+
+            <header class="post-full-header">
+                <section class="post-full-meta">
+                    <time class="post-full-meta-date" datetime="2019-09-01">1 September 2019</time>
+                        <span class="date-divider">/</span> <a href="../tag/jamstack/index.html">jamstack</a>
+                </section>
+                <h1 class="post-full-title">Best way to setup JamStack with Ghost and github pages. ✍️ 👍</h1>
             </header>
-            <div class="pos-relative js-post-content">
-              <div class="m-share">
-                <div class="m-share__content js-sticky">
-                  <a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:2368/best-way-to-setup-jamstack-with-ghost-and-github-pages/" class="m-icon-button filled in-share" target="_blank" rel="noopener" aria-label="Facebook">
-                    <span class="icon-facebook"></span>
-                  </a>
-                  <a href="https://twitter.com/intent/tweet?text=Best%20way%20to%20setup%20JamStack%20with%20Ghost%20and%20github%20pages.%20%E2%9C%8D%EF%B8%8F%20%F0%9F%91%8D&url=http://localhost:2368/best-way-to-setup-jamstack-with-ghost-and-github-pages/" class="m-icon-button filled in-share" target="_blank" rel="noopener" aria-label="Twitter">
-                    <span class="icon-twitter"></span>
-                  </a>
-                  <button class="m-icon-button filled in-share progress js-scrolltop" aria-label="Scroll to top">
-                    <span class="icon-arrow-top"></span>
-                    <svg>
-                      <circle class="progress-ring__circle js-progress" stroke="#04aeee" fill="transparent" r="0" />
-                    </svg>
-                  </button>
-                </div>
-              </div>
-              <p>I was really in a need of tech stack where I can write technical blog but it was really time consuming to run a Wordpress blog fore multiple reasons like a it was really heavy for normal tech blogger like me - <strong>JamStack with Ghost and github pages</strong>.  As I don't want extra clutter to maintain a CMS site. I was always wanted a simple blogging system that is flexible enough that I don't have to spend too much time to maintain it. </p><p>Initially I was using a static site generator like <strong>Jekyll</strong>. It was really good site generator from markdown files. I worked on it for few months and developed a site as well from it and host it to github. After few time I was busy working on other freelancing projects and really didn't look at it. </p><p>After couple of years, when I look at the static site generator era, its completely different trend here. Everyone is talking about <a href="https://jamstack.org/"><strong>JamStack</strong></a> and static site generator and there also <a href="https://ghost.org/"><strong>Ghost CMS</strong></a> was available. It's the best <a href="https://en.wikipedia.org/wiki/Headless_content_management_system"><strong>headless CMS</strong></a> I've ever worked with. Typing on its editor is just a breeze. </p><!--kg-card-begin: hr--><hr><!--kg-card-end: hr--><!--kg-card-begin: markdown--><blockquote>
+
+            <figure class="post-full-image">
+                <img
+                    srcset="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib&#x3D;rb-1.2.1&amp;q&#x3D;80&amp;fm&#x3D;jpg&amp;crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;w&#x3D;1080&amp;fit&#x3D;max&amp;ixid&#x3D;eyJhcHBfaWQiOjExNzczfQ 300w,
+                            https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib&#x3D;rb-1.2.1&amp;q&#x3D;80&amp;fm&#x3D;jpg&amp;crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;w&#x3D;1080&amp;fit&#x3D;max&amp;ixid&#x3D;eyJhcHBfaWQiOjExNzczfQ 600w,
+                            https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib&#x3D;rb-1.2.1&amp;q&#x3D;80&amp;fm&#x3D;jpg&amp;crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;w&#x3D;1080&amp;fit&#x3D;max&amp;ixid&#x3D;eyJhcHBfaWQiOjExNzczfQ 1000w,
+                            https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib&#x3D;rb-1.2.1&amp;q&#x3D;80&amp;fm&#x3D;jpg&amp;crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;w&#x3D;1080&amp;fit&#x3D;max&amp;ixid&#x3D;eyJhcHBfaWQiOjExNzczfQ 2000w"
+                    sizes="(max-width: 800px) 400px,
+                            (max-width: 1170px) 700px,
+                            1400px"
+                    src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib&#x3D;rb-1.2.1&amp;q&#x3D;80&amp;fm&#x3D;jpg&amp;crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;w&#x3D;1080&amp;fit&#x3D;max&amp;ixid&#x3D;eyJhcHBfaWQiOjExNzczfQ"
+                    alt="Best way to setup JamStack with Ghost and github pages. ✍️ 👍"
+                />
+            </figure>
+
+            <section class="post-full-content">
+                <div class="post-content">
+                    <p>I was really in a need of tech stack where I can write technical blog but it was really time consuming to run a Wordpress blog fore multiple reasons like a it was really heavy for normal tech blogger like me - <strong>JamStack with Ghost and github pages</strong>.  As I don't want extra clutter to maintain a CMS site. I was always wanted a simple blogging system that is flexible enough that I don't have to spend too much time to maintain it. </p><p>Initially I was using a static site generator like <strong>Jekyll</strong>. It was really good site generator from markdown files. I worked on it for few months and developed a site as well from it and host it to github. After few time I was busy working on other freelancing projects and really didn't look at it. </p><p>After couple of years, when I look at the static site generator era, its completely different trend here. Everyone is talking about <a href="https://jamstack.org/"><strong>JamStack</strong></a> and static site generator and there also <a href="https://ghost.org/"><strong>Ghost CMS</strong></a> was available. It's the best <a href="https://en.wikipedia.org/wiki/Headless_content_management_system"><strong>headless CMS</strong></a> I've ever worked with. Typing on its editor is just a breeze. </p><!--kg-card-begin: hr--><hr><!--kg-card-end: hr--><!--kg-card-begin: markdown--><blockquote>
 <p><strong>What is JamStack:</strong><br>
 A modern architecture — Create fast and secure sites and dynamic apps with JavaScript, APIs, and prerendered Markup, served without web servers.</p>
 </blockquote>
@@ -308,108 +344,282 @@ A headless content management system, or headless CMS, is a back-end only conten
 </ul>
 <!--kg-card-end: markdown--><p>Each of the above requirements will be resolved by the JamStack hosted to Github Pages. </p><p>What I did was, </p><ul><li>just apply for the custom domain from <strong>Godaddy</strong>. </li><li>setup Ghost CMS on local for article writing</li><li>use <strong>wget </strong>to generate the static site in <strong>/docs</strong> folder</li><li>setup Github Repository and push the code to it</li><li>setup Github pages published from <strong>/docs</strong> folder &amp; received domain <a href="https://tejasrsuthar.github.io/blog/">https://tejasrsuthar.github.io/blog/</a></li><li>add CNAME file to <strong>/docs </strong>folder and provided the custom domain (<strong>note:</strong> I've not yet setup my custom domain. Just running the blog under the Github Pages domain.)</li></ul><p>Overall my experience with this setup for blog is great and I'm planning to write more in-depth articles. </p><p>Currently you're reading the blog which is hosted with Github Pages on JamStack. </p><!--kg-card-begin: markdown--><p><strong>Conclusion</strong></p>
 <!--kg-card-end: markdown--><p>Now a days, there are so many options to host a static site and I find this way more clinical and suits my requirements. You can still host this static site in S3 bucket as a static site hosting. You need to pay minimal amount to host files there. And with that S3 bucket setup you also have the liberty to use the CloudFront CDN, that will improve caching ability and users get low latency. </p><p></p><p></p>
-            </div>
-          </div>
+                </div>
+            </section>
+
+
+            <footer class="post-full-footer">
+
+
+                    
+<section class="author-card">
+        <img class="author-profile-image" src="../content/images/size/w100/2019/09/Tejas-Suthar-Profile-Pic1.jpg" alt="Tejas Suthar" />
+    <section class="author-card-content">
+        <h4 class="author-card-name"><a href="../author/tejas-suthar/index.html">Tejas Suthar</a></h4>
+            <p>Tejas is AWS Certifed Professional, and a father of a wonderful kid loves to write about modern JavaScript, Node.js, AWS services. He works from home as a Remote Sr. Backend Engineer at Mobiquity Inc.</p>
+    </section>
+</section>
+<div class="post-full-footer-right">
+    <a class="author-card-button" href="../author/tejas-suthar/index.html">Read More</a>
+</div>
+
+
+            </footer>
+
+
+        </article>
+
+    </div>
+</main>
+
+<aside class="read-next outer">
+    <div class="inner">
+        <div class="read-next-feed">
+
+                <article class="post-card post tag-aws-certification featured ">
+
+    <a class="post-card-image-link" href="../how-to-prepare-for-aws-certification/index.html">
+        <img class="post-card-image"
+            srcset="https://images.unsplash.com/photo-1557899563-1940fc95709c?ixlib&#x3D;rb-1.2.1&amp;q&#x3D;80&amp;fm&#x3D;jpg&amp;crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;w&#x3D;1080&amp;fit&#x3D;max&amp;ixid&#x3D;eyJhcHBfaWQiOjExNzczfQ 300w,
+                    https://images.unsplash.com/photo-1557899563-1940fc95709c?ixlib&#x3D;rb-1.2.1&amp;q&#x3D;80&amp;fm&#x3D;jpg&amp;crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;w&#x3D;1080&amp;fit&#x3D;max&amp;ixid&#x3D;eyJhcHBfaWQiOjExNzczfQ 600w,
+                    https://images.unsplash.com/photo-1557899563-1940fc95709c?ixlib&#x3D;rb-1.2.1&amp;q&#x3D;80&amp;fm&#x3D;jpg&amp;crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;w&#x3D;1080&amp;fit&#x3D;max&amp;ixid&#x3D;eyJhcHBfaWQiOjExNzczfQ 1000w,
+                    https://images.unsplash.com/photo-1557899563-1940fc95709c?ixlib&#x3D;rb-1.2.1&amp;q&#x3D;80&amp;fm&#x3D;jpg&amp;crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;w&#x3D;1080&amp;fit&#x3D;max&amp;ixid&#x3D;eyJhcHBfaWQiOjExNzczfQ 2000w"
+            sizes="(max-width: 1000px) 400px, 700px"
+            src="https://images.unsplash.com/photo-1557899563-1940fc95709c?ixlib&#x3D;rb-1.2.1&amp;q&#x3D;80&amp;fm&#x3D;jpg&amp;crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;w&#x3D;1080&amp;fit&#x3D;max&amp;ixid&#x3D;eyJhcHBfaWQiOjExNzczfQ"
+            alt="How to prepare for AWS Certification"
+        />
+    </a>
+
+    <div class="post-card-content">
+
+        <a class="post-card-content-link" href="../how-to-prepare-for-aws-certification/index.html">
+
+            <header class="post-card-header">
+                    <span class="post-card-tags">AWS Certification</span>
+                <h2 class="post-card-title">How to prepare for AWS Certification</h2>
+            </header>
+
+            <section class="post-card-excerpt">
+                <p>Preparing for AWS certification is definitely not a piece of cake. You definitely give your best and it will really test your knowledge about the AWS services. I'll provide you my strategies for passing this exam and hope you'll be able to pass this exam too. Best luck!</p>
+            </section>
+
+        </a>
+
+        <footer class="post-card-meta">
+
+            <ul class="author-list">
+                <li class="author-list-item">
+
+                    <div class="author-name-tooltip">
+                        Tejas Suthar
+                    </div>
+
+                        <a href="../author/tejas-suthar/index.html" class="static-avatar">
+                            <img class="author-profile-image" src="../content/images/size/w100/2019/09/Tejas-Suthar-Profile-Pic1.jpg" alt="Tejas Suthar" />
+                        </a>
+                </li>
+            </ul>
+
+            <span class="reading-time">1 min read</span>
+
+        </footer>
+
+    </div>
+
+</article>
+
+                <article class="post-card post tag-aws-certification ">
+
+    <a class="post-card-image-link" href="../how-i-prepared-for-my-aws-certification/index.html">
+        <img class="post-card-image"
+            srcset="https://images.unsplash.com/photo-1456406644174-8ddd4cd52a06?ixlib&#x3D;rb-1.2.1&amp;q&#x3D;80&amp;fm&#x3D;jpg&amp;crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;w&#x3D;1080&amp;fit&#x3D;max&amp;ixid&#x3D;eyJhcHBfaWQiOjExNzczfQ 300w,
+                    https://images.unsplash.com/photo-1456406644174-8ddd4cd52a06?ixlib&#x3D;rb-1.2.1&amp;q&#x3D;80&amp;fm&#x3D;jpg&amp;crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;w&#x3D;1080&amp;fit&#x3D;max&amp;ixid&#x3D;eyJhcHBfaWQiOjExNzczfQ 600w,
+                    https://images.unsplash.com/photo-1456406644174-8ddd4cd52a06?ixlib&#x3D;rb-1.2.1&amp;q&#x3D;80&amp;fm&#x3D;jpg&amp;crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;w&#x3D;1080&amp;fit&#x3D;max&amp;ixid&#x3D;eyJhcHBfaWQiOjExNzczfQ 1000w,
+                    https://images.unsplash.com/photo-1456406644174-8ddd4cd52a06?ixlib&#x3D;rb-1.2.1&amp;q&#x3D;80&amp;fm&#x3D;jpg&amp;crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;w&#x3D;1080&amp;fit&#x3D;max&amp;ixid&#x3D;eyJhcHBfaWQiOjExNzczfQ 2000w"
+            sizes="(max-width: 1000px) 400px, 700px"
+            src="https://images.unsplash.com/photo-1456406644174-8ddd4cd52a06?ixlib&#x3D;rb-1.2.1&amp;q&#x3D;80&amp;fm&#x3D;jpg&amp;crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;w&#x3D;1080&amp;fit&#x3D;max&amp;ixid&#x3D;eyJhcHBfaWQiOjExNzczfQ"
+            alt="How I prepared for my AWS certification"
+        />
+    </a>
+
+    <div class="post-card-content">
+
+        <a class="post-card-content-link" href="../how-i-prepared-for-my-aws-certification/index.html">
+
+            <header class="post-card-header">
+                    <span class="post-card-tags">AWS Certification</span>
+                <h2 class="post-card-title">How I prepared for my AWS certification</h2>
+            </header>
+
+            <section class="post-card-excerpt">
+                <p>Complete information about how to pass the AWS Certification and what needs to be taken care of in order to pass them in couple of months.</p>
+            </section>
+
+        </a>
+
+        <footer class="post-card-meta">
+
+            <ul class="author-list">
+                <li class="author-list-item">
+
+                    <div class="author-name-tooltip">
+                        Tejas Suthar
+                    </div>
+
+                        <a href="../author/tejas-suthar/index.html" class="static-avatar">
+                            <img class="author-profile-image" src="../content/images/size/w100/2019/09/Tejas-Suthar-Profile-Pic1.jpg" alt="Tejas Suthar" />
+                        </a>
+                </li>
+            </ul>
+
+            <span class="reading-time">1 min read</span>
+
+        </footer>
+
+    </div>
+
+</article>
+
         </div>
-        <section class="m-author no-subscribers">
-          <div class="m-author__content">
-            <div class="m-author__picture">
-              <a href="../author/tejas-suthar/index.html" class="m-author-picture" aria-label="Author picture">
-                <div style="background-image: url(../content/images/2019/09/Tejas-Suthar-Profile-Pic1.jpg);"></div>
-              </a>
-            </div>
-            <div class="m-author__info">
-              <h4 class="m-author__name">
-                <a href="../author/tejas-suthar/index.html">Tejas Suthar</a>
-              </h4>
-              <p class="m-author__bio">Tejas is AWS Certifed Professional, and a father of a wonderful kid loves to write about modern JavaScript, Node.js, AWS services. He works from home as a Remote Sr. Backend Engineer at Mobiquity Inc.</p>
-              <ul class="m-author-links">
-                <li>
-                  <a href="http://www.tejasrsuthar.com" target="_blank" rel="noopener" aria-label="Website">
-                    <span class="icon-globe"></span>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://facebook.com/tejassuthar" target="_blank" rel="noopener" aria-label="Facebook">
-                    <span class="icon-facebook"></span>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://twitter.com/@tejassuthar" target="_blank" rel="noopener" aria-label="Twitter">
-                    <span class="icon-twitter"></span>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </section>
-        <section class="m-recommended">
-          <div class="l-wrapper in-recommended">
-            <h3 class="m-section-title in-recommended">Recommended for you</h3>
-            <div class="m-recommended-articles">
-              <div class="m-recommended-slider js-recommended-articles">
-                
-    <header class="m-heading no-margin">
-      <h3>No posts found</h3>
-      <p>
-        Apparently there are no posts at the moment, check again later.
-      </p>
-    </header>
-              </div>
-            </div>
-          </div>
-        </section>
-      </div>
-    </article>
-  </main>
+    </div>
+</aside>
+
+<div class="floating-header">
+    <div class="floating-header-logo">
+        <a href="../index.html">
+                <img src="../content/images/size/w30/2019/09/apple-touch-icon-72x72.png" alt="Tejas Suthar icon" />
+            <span>Tejas Suthar</span>
+        </a>
+    </div>
+    <span class="floating-header-divider">&mdash;</span>
+    <div class="floating-header-title">Best way to setup JamStack with Ghost and github pages. ✍️ 👍</div>
+    <div class="floating-header-share">
+        <div class="floating-header-share-label">Share this <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <path d="M7.5 15.5V4a1.5 1.5 0 1 1 3 0v4.5h2a1 1 0 0 1 1 1h2a1 1 0 0 1 1 1H18a1.5 1.5 0 0 1 1.5 1.5v3.099c0 .929-.13 1.854-.385 2.748L17.5 23.5h-9c-1.5-2-5.417-8.673-5.417-8.673a1.2 1.2 0 0 1 1.76-1.605L7.5 15.5zm6-6v2m-3-3.5v3.5m6-1v2"/>
+</svg>
+</div>
+        <a class="floating-header-share-tw" href="https://twitter.com/share?text=Best%20way%20to%20setup%20JamStack%20with%20Ghost%20and%20github%20pages.%20%E2%9C%8D%EF%B8%8F%20%F0%9F%91%8D&amp;url=http://localhost:2368/best-way-to-setup-jamstack-with-ghost-and-github-pages/"
+            onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"/></svg>
+        </a>
+        <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:2368/best-way-to-setup-jamstack-with-ghost-and-github-pages/"
+            onclick="window.open(this.href, 'share-facebook','width=580,height=296');return false;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"/></svg>
+        </a>
+    </div>
+    <progress id="reading-progress" class="progress" value="0">
+        <div class="progress-container">
+            <span class="progress-bar"></span>
+        </div>
+    </progress>
 </div>
 
 
 
-    
-<div class="m-search js-search">
-  <button class="m-icon-button outlined as-close-search js-close-search" aria-label="Close search">
-    <span class="icon-close"></span>
-  </button>
-  <div class="m-search__content">
-    <form class="m-search__form">
-      <fieldset>
-        <span class="icon-search m-search-icon"></span>
-        <input type="text" class="m-input in-search js-input-search" placeholder="Type to search" aria-label="Type to search">
-      </fieldset>
-    </form>
-    <div class="js-search-results hide"></div>
-    <p class="m-no-found align-center hide js-no-results">No results for your search, try something different.</>
-  </div>
-</div>
+
+        <footer class="site-footer outer">
+            <div class="site-footer-content inner">
+                <section class="copyright"><a href="../index.html">Tejas Suthar</a> &copy; 2019</section>
+                <nav class="site-footer-nav">
+                    <a href="../index.html">Latest Posts</a>
+                    <a href="https://www.facebook.com/tejassuthar" target="_blank" rel="noopener">Facebook</a>
+                    <a href="https://twitter.com/tejassuthar" target="_blank" rel="noopener">Twitter</a>
+                    <a href="https://ghost.org" target="_blank" rel="noopener">Ghost</a>
+                </nav>
+            </div>
+        </footer>
+
+    </div>
+
+
+    <script>
+        var images = document.querySelectorAll('.kg-gallery-image img');
+        images.forEach(function (image) {
+            var container = image.closest('.kg-gallery-image');
+            var width = image.attributes.width.value;
+            var height = image.attributes.height.value;
+            var ratio = width / height;
+            container.style.flex = ratio + ' 1 0%';
+        })
+    </script>
+
+
+    <script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous">
+    </script>
+    <script type="text/javascript" src="../assets/built/jquery.fitvids.js%3Fv=3ecc58b498"></script>
+
+    <script src="../assets/built/infinitescroll.js%3Fv=3ecc58b498"></script>
+
+    <script>
+
+// NOTE: Scroll performance is poor in Safari
+// - this appears to be due to the events firing much more slowly in Safari.
+//   Dropping the scroll event and using only a raf loop results in smoother
+//   scrolling but continuous processing even when not scrolling
+$(document).ready(function () {
+    // Start fitVids
+    var $postContent = $(".post-full-content");
+    $postContent.fitVids();
+    // End fitVids
+
+    var progressBar = document.querySelector('#reading-progress');
+    var header = document.querySelector('.floating-header');
+    var title = document.querySelector('.post-full-title');
+
+    var lastScrollY = window.scrollY;
+    var lastWindowHeight = window.innerHeight;
+    var lastDocumentHeight = $(document).height();
+    var ticking = false;
+
+    function onScroll() {
+        lastScrollY = window.scrollY;
+        requestTick();
+    }
+
+    function onResize() {
+        lastWindowHeight = window.innerHeight;
+        lastDocumentHeight = $(document).height();
+        requestTick();
+    }
+
+    function requestTick() {
+        if (!ticking) {
+            requestAnimationFrame(update);
+        }
+        ticking = true;
+    }
+
+    function update() {
+        var trigger = title.getBoundingClientRect().top + window.scrollY;
+        var triggerOffset = title.offsetHeight + 35;
+        var progressMax = lastDocumentHeight - lastWindowHeight;
+
+        // show/hide floating header
+        if (lastScrollY >= trigger + triggerOffset) {
+            header.classList.add('floating-active');
+        } else {
+            header.classList.remove('floating-active');
+        }
+
+        progressBar.setAttribute('max', progressMax);
+        progressBar.setAttribute('value', lastScrollY);
+
+        ticking = false;
+    }
+
+    window.addEventListener('scroll', onScroll, {passive: true});
+    window.addEventListener('resize', onResize, false);
+
+    update();
+
+});
+</script>
+
 
     
-<footer class="m-footer">
-  <div class="m-footer__content">
-    <p class="m-footer-copyright">
-      <span>Tejas Suthar &copy; 2019</span>
-      <span>&nbsp; &bull; &nbsp;</span>
-      <span>Published with <a href="https://ghost.org" target="_blank" rel="noopener">Ghost</a></span>
-    </p>
-    <nav class="m-footer-social">
-        <a href="https://www.facebook.com/tejassuthar" target="_blank" rel="noopener" aria-label="Facebook">
-          <span class="icon-facebook"></span>
-        </a>
-        <a href="https://twitter.com/tejassuthar" target="_blank" rel="noopener" aria-label="Twitter">
-          <span class="icon-twitter"></span>
-        </a>
-    </nav>
-  </div>
-</footer>
 
-    <script defer src="../assets/js/manifest.js%3Fv=e8c3138abf"></script>
-    <script defer src="../assets/js/polyfill.js%3Fv=e8c3138abf"></script>
-    <script defer src="../assets/js/vendor.js%3Fv=e8c3138abf"></script>
-    <script defer src="../assets/js/app.js%3Fv=e8c3138abf"></script>
-
-      <script defer src="../assets/js/post.js%3Fv=e8c3138abf"></script>
-
-
-    
-  </body>
+</body>
 </html>
