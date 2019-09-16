@@ -86,13 +86,16 @@
 <script>
   const disableFadeAnimation = true;
 </script>
-
-
 <!-- =================================================
 Footer CSS override 
 ================================================== -->
 <style>
- .post-full-image{margin:0;height:490px;background:#c5d2d9 50%;background-size:cover;border-radius:5px}
+@media (min-width: 900px){
+ .home-template .site-nav {top: -50px !important;}	
+}
+    
+.site-logo { max-height: 90px;}
+.post-full-image{margin:0;height:490px;background:#c5d2d9 50%;background-size:cover;border-radius:5px}
 .post-full-content:after,.post-full-content:before{content:"";position:absolute;top:15px;z-index:-1;display:block;width:20px;height:200px;background:rgba(39,44,49,.04);filter:blur(5px);position:absolute;top:15px;z-index:-1;display:block;width:20px;height:200px;background:rgba(39,44,49,.04);filter:blur(5px)}
 .author-card .author-profile-image,.author-card .avatar-wrapper{margin-top:10px;margin-top:10px;border:2px solid rgba(39,44,49,.04);padding:2px}
 .author-card-content p{font-size:19px;color:#5c5a63}
@@ -102,6 +105,7 @@ Footer CSS override
 .post-content .kg-bookmark-card a:hover .kg-bookmark-title{color:#f6396a}
 .site-header{padding-top:20px;padding-bottom:20px;background:#f6396a no-repeat 50%;background:linear-gradient(127deg,rgba(246,57,106,1) 0%,rgba(246,57,106,1) 49%,rgba(246,171,57,0.9948354341736695) 98%)}
 .site-header:hover::before{opacity:1}
+.site-header-content{padding: 1vw 0vw 8vw 0vw;}
 .nav li a{font-weight:400}
 .post-full-content{font-family:Source Sans Pro,HelveticaNeue-Light,Helvetica Neue Light,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif}
 b,strong{font-weight:400}
