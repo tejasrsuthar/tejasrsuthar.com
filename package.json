@@ -33,7 +33,9 @@
     "lint": "yarn lint:server && yarn lint:frontend && yarn lint:test",
     "posttest": "yarn lint",
     "fixmodulenotdefined": "yarn cache clean && cd core/client && rm -rf node_modules tmp dist && yarn && cd ../../",
-    "postinstall": "cpy node_modules/@tryghost/members-theme-bindings/build/members-theme-bindings.js core/server/public/"
+    "postinstall": "cpy node_modules/@tryghost/members-theme-bindings/build/members-theme-bindings.js core/server/public/",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "engines": {
     "node": "^8.10.0 || ^10.13.0",
@@ -130,7 +132,8 @@
     "simple-html-tokenizer": "0.5.8",
     "uuid": "3.3.3",
     "validator": "6.3.0",
-    "xml": "1.0.1"
+    "xml": "1.0.1",
+    "snyk": "^1.316.1"
   },
   "optionalDependencies": {
     "@tryghost/html-to-mobiledoc": "0.5.1",
@@ -169,5 +172,6 @@
   },
   "resolutions": {
     "moment-timezone": "0.5.23"
-  }
+  },
+  "snyk": true
 }
