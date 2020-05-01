@@ -1,0 +1,90 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.14.1
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  SNYK-JS-LODASH-567746:
+    - '@tryghost/members-theme-bindings > lodash':
+        patched: '2020-05-01T04:34:48.601Z'
+    - bookshelf-relations > lodash:
+        patched: '2020-05-01T04:34:48.601Z'
+    - gscan > express-hbs > lodash:
+        patched: '2020-05-01T04:34:48.601Z'
+    - lodash:
+        patched: '2020-05-01T04:34:48.601Z'
+    - ghost-ignition > lodash:
+        patched: '2020-05-01T04:34:48.601Z'
+    - node-jose > lodash:
+        patched: '2020-05-01T04:34:48.601Z'
+    - amperize > lodash:
+        patched: '2020-05-01T04:34:48.601Z'
+    - bookshelf > lodash:
+        patched: '2020-05-01T04:34:48.601Z'
+    - express-hbs > lodash:
+        patched: '2020-05-01T04:34:48.601Z'
+    - gscan > lodash:
+        patched: '2020-05-01T04:34:48.601Z'
+    - html-to-text > lodash:
+        patched: '2020-05-01T04:34:48.601Z'
+    - knex > lodash:
+        patched: '2020-05-01T04:34:48.601Z'
+    - knex-migrator > lodash:
+        patched: '2020-05-01T04:34:48.601Z'
+    - metascraper > lodash:
+        patched: '2020-05-01T04:34:48.601Z'
+    - metascraper-author > lodash:
+        patched: '2020-05-01T04:34:48.601Z'
+    - metascraper-logo-favicon > lodash:
+        patched: '2020-05-01T04:34:48.601Z'
+    - metascraper-title > lodash:
+        patched: '2020-05-01T04:34:48.601Z'
+    - '@tryghost/members-theme-bindings > @tryghost/members-browser-auth > lodash':
+        patched: '2020-05-01T04:34:48.601Z'
+    - '@tryghost/social-urls > ghost-ignition > lodash':
+        patched: '2020-05-01T04:34:48.601Z'
+    - bookshelf-relations > ghost-ignition > lodash:
+        patched: '2020-05-01T04:34:48.601Z'
+    - gscan > ghost-ignition > lodash:
+        patched: '2020-05-01T04:34:48.601Z'
+    - knex-migrator > ghost-ignition > lodash:
+        patched: '2020-05-01T04:34:48.601Z'
+    - '@tryghost/members-api > node-jose > lodash':
+        patched: '2020-05-01T04:34:48.601Z'
+    - archiver > async > lodash:
+        patched: '2020-05-01T04:34:48.601Z'
+    - brute-knex > knex > lodash:
+        patched: '2020-05-01T04:34:48.601Z'
+    - knex-migrator > knex > lodash:
+        patched: '2020-05-01T04:34:48.601Z'
+    - metascraper > @metascraper/helpers > lodash:
+        patched: '2020-05-01T04:34:48.601Z'
+    - metascraper-author > @metascraper/helpers > lodash:
+        patched: '2020-05-01T04:34:48.601Z'
+    - metascraper-description > @metascraper/helpers > lodash:
+        patched: '2020-05-01T04:34:48.601Z'
+    - metascraper-image > @metascraper/helpers > lodash:
+        patched: '2020-05-01T04:34:48.601Z'
+    - metascraper-logo > @metascraper/helpers > lodash:
+        patched: '2020-05-01T04:34:48.601Z'
+    - metascraper-logo-favicon > @metascraper/helpers > lodash:
+        patched: '2020-05-01T04:34:48.601Z'
+    - metascraper-publisher > @metascraper/helpers > lodash:
+        patched: '2020-05-01T04:34:48.601Z'
+    - metascraper-title > @metascraper/helpers > lodash:
+        patched: '2020-05-01T04:34:48.601Z'
+    - metascraper-url > @metascraper/helpers > lodash:
+        patched: '2020-05-01T04:34:48.601Z'
+    - metascraper > cheerio > lodash:
+        patched: '2020-05-01T04:34:48.601Z'
+    - '@tryghost/members-theme-bindings > @tryghost/members-browser-auth > ghost-ignition > lodash':
+        patched: '2020-05-01T04:34:48.601Z'
+    - '@tryghost/members-theme-bindings > @tryghost/members-browser-auth > @tryghost/members-gateway-api > lodash':
+        patched: '2020-05-01T04:34:48.601Z'
+    - amperize > request-promise > request-promise-core > lodash:
+        patched: '2020-05-01T04:34:48.601Z'
+    - '@tryghost/members-theme-bindings > @tryghost/members-browser-auth > @tryghost/members-gateway-api > ghost-ignition > lodash':
+        patched: '2020-05-01T04:34:48.601Z'
+    - '@tryghost/members-theme-bindings > @tryghost/members-browser-auth > @tryghost/members-gateway-api > @tryghost/members-gateway-protocol > lodash':
+        patched: '2020-05-01T04:34:48.601Z'
+    - '@tryghost/members-theme-bindings > @tryghost/members-browser-auth > @tryghost/members-gateway-api > @tryghost/members-gateway-protocol > ghost-ignition > lodash':
+        patched: '2020-05-01T04:34:48.601Z'
