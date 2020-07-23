@@ -7,5 +7,6 @@ SITE_PATH="https://tejasrsuthar.com"
 rm -rf $OUTDIR && gssg --url $SITE_PATH --dest $OUTDIR && \
 echo "tejasrsuthar.com" > "$OUTDIR/CNAME" && \
 git add . && \
-git commit -m ':tada: update blog' &&  \
+git commit -m 'Feat: update blog :tada:' &&  \
+"release": "git add . && standard-version -a"
 git push origin master

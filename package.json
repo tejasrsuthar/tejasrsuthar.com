@@ -1,0 +1,28 @@
+{
+  "name": "tejas-blog",
+  "version": "1.0.0",
+  "description": "This package.json is manually created. Just for tagging release versions.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {
+    "standard-version": "^8.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release": "standard-version -a"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tejasrsuthar/tejasrsuthar.com.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tejasrsuthar/tejasrsuthar.com/issues"
+  },
+  "homepage": "https://github.com/tejasrsuthar/tejasrsuthar.com#readme"
+}
