@@ -1,0 +1,50 @@
+{
+  "data": {
+    "posts": [],
+    "tags": [],
+    "posts_tags": [],
+    "users": [
+      {
+        "id": 1,
+        "slug": "person",
+        "bio": "I am a person on the website",
+        "website": "https://www.example.com",
+        "created_at": "Thu, 3 Aug 2019 13:45:57 +0530",
+        "created_by": 1,
+        "email": "person@example.com",
+        "name": "Some Person",
+        "profile_image": ""
+      }
+    ]
+  },
+  "meta": {
+    "exported_on": "Thu, 3 Aug 2019 13:46:48 +0530",
+    "version": "2.14.0"
+  }
+}
+
+{
+            "name": "User",
+            "entries": [
+                {
+                    "id": 1,
+                    "name": "Ghost",
+                    "email": "ghost@example.com",
+                    "status": "inactive",
+                    "roles": []
+                },
+                {
+                    "id": "5951f5fca366002ebd5dbef7",
+                    "name": "Ghost",
+                    "email": "ghost-author@example.com",
+                    "status": "active",
+                    "roles": ["Author"],
+                    "twitter": "ghost",
+                    "facebook": "ghost",
+                    "location": "The Internet",
+                    "website": "https://ghost.org",
+                    "bio": "You can delete this user to remove all the welcome posts",
+                    "profile_image": "https://static.ghost.org/v3.0.0/images/ghost.png"
+                }
+            ]
+        },
