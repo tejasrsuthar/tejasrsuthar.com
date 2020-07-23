@@ -6,7 +6,7 @@ to_url=tejasrsuthar.com
 to_https=true
 
 # Copy blog content
-wget --recursive --no-host-directories --directory-prefix=docs --adjust-extension --timeout=30 --no-parent --convert-links ${from_url}/
+rm -rf docs && wget --recursive --no-host-directories --directory-prefix=docs --adjust-extension --timeout=30 --no-parent --convert-links ${from_url}/
 
 # Copy 404 page
 wget --no-host-directories --directory-prefix=docs --adjust-extension --timeout=30 --no-parent --convert-links --content-on-error --timestamping ${from_url}/404.html
