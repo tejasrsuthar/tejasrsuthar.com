@@ -1,4 +1,4 @@
 User-agent: *
-Sitemap: tejasrsuthar.com/sitemap.xml
+Sitemap: https://tejasrsuthar.com/sitemap.xml
 Disallow: /ghost/
 Disallow: /p/

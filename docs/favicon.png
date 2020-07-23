@@ -6,7 +6,7 @@
 	<title>Tejas Suthar — 404</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-	<link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i&display=swap" rel="stylesheet"> 	<link rel="stylesheet" type="text/css" href="tejasrsuthar.com/assets/css/style.css?v=00acc16749" />
+	<link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i&display=swap" rel="stylesheet"> 	<link rel="stylesheet" type="text/css" href="/assets/css/style.css?v=00acc16749" />
 </head>
 <body class="special-template">
 
@@ -19,7 +19,7 @@
 					</header>
 					<div class="page-content">
 						<p class="page-description">The thing you were looking for is no longer here or never was.</p>
-						<p><a class="btn btn-outlined" href="tejasrsuthar.com">&larr; Back to homepage</a></p>
+						<p><a class="btn btn-outlined" href="">&larr; Back to homepage</a></p>
 					</div>
 				</section><!-- .site-error -->
 			</main><!-- .site-main -->
