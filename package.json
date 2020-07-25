@@ -1,6 +1,6 @@
 {
   "name": "tejas-blog",
-  "version": "1.2.5",
+  "version": "1.2.6",
   "description": "This package.json is manually created. Just for tagging release versions.",
   "main": "index.js",
   "directories": {

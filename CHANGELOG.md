@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.2.6](https://github.com/tejasrsuthar/tejasrsuthar.com/compare/v1.2.5...v1.2.6) (2020-07-25)
+
+
+### Features
+
+* update blog :tada: ([14430f5](https://github.com/tejasrsuthar/tejasrsuthar.com/commit/14430f5043ea5cf5a4f676637faada3cacddd443))
+
 ### [1.2.5](https://github.com/tejasrsuthar/tejasrsuthar.com/compare/v1.2.4...v1.2.5) (2020-07-25)
 
 
