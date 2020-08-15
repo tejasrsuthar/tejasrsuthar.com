@@ -7,7 +7,7 @@
     "doc": "docs"
   },
   "dependencies": {
-    "standard-version": "^8.0.2"
+    "standard-version": "^9.0.0"
   },
   "devDependencies": {},
   "scripts": {
